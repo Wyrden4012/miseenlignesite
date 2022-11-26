@@ -1,0 +1,40 @@
+.bouton{
+    font-size: 24px;
+    background-color: rgb(46, 45, 45);
+    color: white;
+    text-decoration: none;
+    display:inline-block;
+    padding: 1em 2em;
+    transition: 1s;
+    border-radius: 2em;
+    border: 1px solid ;
+}
+
+.bouton:hover{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(46, 45, 45);
+    color: rgb(46, 45, 45);
+}
+
+.boutons{
+    display: flex;
+    gap: 50px;
+}
+
+.bouton_blanc{
+    background-color: white;
+    color: rgb(46, 45, 45);
+    border: 1px solid rgb(46, 45, 45);
+}
+.bouton_blanc:hover{
+    background-color:  rgb(46, 45, 45);
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width:900px){
+    .bouton{
+        font-size: 16px;
+
+    }
+}
+

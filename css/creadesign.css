@@ -1,0 +1,50 @@
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(46, 45, 45);
+    background-color: rgb(46, 45, 45);
+    transition: 1.5s;
+    transition-delay: 1s;
+    padding: 20px;
+    border: solid 2px white;
+    
+}
+.txt{
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cd{
+    width :600px; height : 300px;
+    opacity: 1;
+}
+.section2:hover {
+    background-color: rgb(255, 255, 255) ;
+    animation-name: album;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes album {
+    0%{
+        opacity:1;
+        transform: translateX(-200px) translateY(0);
+    } 
+    100%{
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .cd{
+        width :335px; height : 185px;
+    }
+    
+}

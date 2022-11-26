@@ -1,0 +1,103 @@
+/*partie menu*/
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 45, 45);
+    transition: 1s;
+ 
+}
+
+.menu:hover{
+    color: rgb(46, 45, 45);
+    background-color: rgb(255, 255, 255);
+    border: 2px rgb(46, 45, 45) solid;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.menu2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; 
+    margin: 0;
+}
+
+
+
+
+
+/*partie présentation*/
+
+.photo{
+    width :250px; height : 250px;
+    border: none;
+    -moz-border-radius : 150px;
+    -webkit-border-radius : 150px;
+    border-radius : 150px;
+}
+
+.photo:hover{
+    animation-name: photo;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes photo {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+    
+}
+.pres{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 45px;
+}
+
+.pres2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pres > div:nth-of-type(1){
+    color:rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:800px){
+    *{
+        font-size: 16px;
+    }
+    .photo{
+        width :150px; height : 150px;
+    }
+    .pres{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        justify-content: center;
+    }
+    .menu2{
+        padding-left: 0px;
+    }
+}
+
+
